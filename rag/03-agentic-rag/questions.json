@@ -1,0 +1,23 @@
+[
+  {"category": "answerable", "question": "How many annual leave days do employees get?"},
+  {"category": "answerable", "question": "How many days can employees work remotely?"},
+  {"category": "answerable", "question": "Who approves critical production changes?"},
+  {"category": "answerable", "question": "How many sick days do employees get per year?"},
+  {"category": "answerable", "question": "How long is parental leave for a primary caregiver?"},
+
+  {"category": "multi-step", "question": "Does the remote work policy apply to contractors?"},
+  {"category": "multi-step", "question": "What approval is required for a contractor's pull request touching billing logic?"},
+  {"category": "multi-step", "question": "Do contractors get the home office equipment stipend?"},
+  {"category": "multi-step", "question": "Are contractors entitled to paid sick leave?"},
+
+  {"category": "unanswerable", "question": "What is the maternity leave policy?"},
+  {"category": "unanswerable", "question": "What is the company's travel reimbursement policy?"},
+  {"category": "unanswerable", "question": "What is the notice period for resigning employees?"},
+  {"category": "unanswerable", "question": "Does the company offer a 401k or retirement matching plan?"},
+
+  {"category": "ambiguous", "question": "Can I work remotely?"},
+  {"category": "ambiguous", "question": "Who approves it?"},
+  {"category": "ambiguous", "question": "What about contractors?"},
+  {"category": "ambiguous", "question": "How much time off do I get?"},
+  {"category": "ambiguous", "question": "What's the approval process?"}
+]
