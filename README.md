@@ -18,8 +18,10 @@ ai-engineering-roadmap/
 │   ├── 01-basic-rag/          ✅ chunking, embeddings, vector search
 │   ├── 02-advanced-rag/       🚧 hybrid search, reranking, metadata filtering (scaffolded)
 │   └── 03-agentic-rag/        ✅ retrieve → evaluate → rewrite → answer/abstain
-└── langgraph/
-    └── 01-agent-migration/    ✅ the agentic-rag loop, rebuilt as a LangGraph StateGraph
+├── langgraph/
+│   └── 01-agent-migration/    ✅ the agentic-rag loop, rebuilt as a LangGraph StateGraph
+└── multi-agent/
+    └── 01-supervisor-agents/  ✅ specialist agents + supervisor, parallel execution, failure handling
 ```
 
 Each topic folder has its own README explaining the progression within
@@ -51,6 +53,5 @@ reveal a flawed test assumption rather than an actual bug in the agent
 ## Roadmap
 
 New topic folders will be added as the program continues:
-`multi-agent/`, `mcp/`, `evaluation/`, `security/`, `production/`, and a
-final capstone — following the same topic → numbered-stage pattern
-established here.
+`mcp/`, `evaluation/`, `security/`, `production/`, and a final capstone —
+following the same topic → numbered-stage pattern established here.
