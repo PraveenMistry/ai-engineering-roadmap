@@ -20,8 +20,14 @@ ai-engineering-roadmap/
 │   └── 03-agentic-rag/        ✅ retrieve → evaluate → rewrite → answer/abstain
 ├── langgraph/
 │   └── 01-agent-migration/    ✅ the agentic-rag loop, rebuilt as a LangGraph StateGraph
-└── multi-agent/
-    └── 01-supervisor-agents/  ✅ specialist agents + supervisor, parallel execution, failure handling
+├── multi-agent/
+│   └── 01-supervisor-agents/  ✅ specialist agents + supervisor, parallel execution, failure handling
+├── mcp/
+│   └── 01-policy-search-server/  ✅ MCP server/client, agent reconnected through the protocol boundary
+├── a2a/
+│   └── 01-negotiation-simulator/ ✅ two agents, opposing constraints, shared message protocol
+└── evaluation/
+    └── 01-eval-pipeline/         ✅ eval dataset, metrics, LLM judge, trace analysis, regression testing
 ```
 
 Each topic folder has its own README explaining the progression within
@@ -53,5 +59,5 @@ reveal a flawed test assumption rather than an actual bug in the agent
 ## Roadmap
 
 New topic folders will be added as the program continues:
-`mcp/`, `evaluation/`, `security/`, `production/`, and a final capstone —
-following the same topic → numbered-stage pattern established here.
+`security/`, `production/`, and a final capstone — following the same
+topic → numbered-stage pattern established here.
