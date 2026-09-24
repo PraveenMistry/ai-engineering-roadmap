@@ -26,8 +26,12 @@ ai-engineering-roadmap/
 │   └── 01-policy-search-server/  ✅ MCP server/client, agent reconnected through the protocol boundary
 ├── a2a/
 │   └── 01-negotiation-simulator/ ✅ two agents, opposing constraints, shared message protocol
-└── evaluation/
-    └── 01-eval-pipeline/         ✅ eval dataset, metrics, LLM judge, trace analysis, regression testing
+├── evaluation/
+│   └── 01-eval-pipeline/         ✅ eval dataset, metrics, LLM judge, trace analysis, regression testing
+├── security/
+│   └── 01-guardrails/            ✅ input/output guardrails, tool policy, schema validation, attack suite
+└── text-to-sql/
+    └── 01-agentic-sql-v1/        ✅ schema retrieval, SQL gen/validation/execution, refinement loop
 ```
 
 Each topic folder has its own README explaining the progression within
@@ -58,6 +62,6 @@ reveal a flawed test assumption rather than an actual bug in the agent
 
 ## Roadmap
 
-New topic folders will be added as the program continues:
-`security/`, `production/`, and a final capstone — following the same
-topic → numbered-stage pattern established here.
+New topic folders will be added as the program continues: `production/`
+and a final capstone — following the same topic → numbered-stage
+pattern established here.

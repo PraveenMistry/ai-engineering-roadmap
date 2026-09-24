@@ -1,0 +1,12 @@
+[
+  {"id": "sql01", "question": "How many customers do we have?", "expected_answer_contains": ["8"]},
+  {"id": "sql02", "question": "What is our total invoice value?", "expected_answer_contains": ["3430"]},
+  {"id": "sql03", "question": "Who are the top 5 customers by revenue?", "expected_answer_contains": ["Wonka Industries", "Stark Industries", "Hooli", "Wayne Enterprises", "Globex Inc"]},
+  {"id": "sql04", "question": "What was our revenue last month?", "expected_answer_contains": ["1320"]},
+  {"id": "sql05", "question": "Which products generated the most revenue?", "expected_answer_contains": ["Service Plan"]},
+  {"id": "sql06", "question": "How many unpaid invoices do we have?", "expected_answer_contains": ["3"]},
+  {"id": "sql07", "question": "What is the average invoice value?", "expected_answer_contains": ["228"]},
+  {"id": "sql08", "question": "Which customers have unpaid invoices?", "expected_answer_contains": ["Globex Inc", "Initech"]},
+  {"id": "sql09", "question": "What was our revenue by month?", "expected_answer_contains": ["1045", "1320", "1065"]},
+  {"id": "sql10", "question": "Which product sold the most?", "expected_answer_contains": ["Widget A"]}
+]

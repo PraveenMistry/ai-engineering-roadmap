@@ -1,7 +1,7 @@
 """
 Day 11 — Exercise 3: Agent connected through the MCP protocol boundary
 
-Before (Day 10):  Agent -> Python function -> vector search
+Before (Day 10 - multi-agent):  Agent -> Python function -> vector search
                    (policy_agent.py called tools/search_policy.py
                    directly, in the same process)
 

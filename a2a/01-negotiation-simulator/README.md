@@ -20,7 +20,7 @@ Buyer  ↕  Coordinator  ↕  Seller
 `protocol/messages.py` defines the one shape every message follows —
 `message_id`, `conversation_id`, `sender`, `receiver`, `type`,
 `payload`. Neither Buyer nor Seller needs to know how the other agent
-reasons internally — only that messages arriving in this shape are
+response internally — only that messages arriving in this shape are
 valid. This is the same decoupling idea as MCP's tool schema (Day 11),
 applied between two agents instead of an agent and a tool.
 
@@ -68,8 +68,8 @@ relying on either agent's own account of events.
 
 `agents/reviewer.py` runs AFTER the negotiation completes, not during
 it — deliberately kept separate so the audit doesn't depend on the
-coordinator's own real-time logic being correct. It checks:
-
+coordinator's own real-time logic being correct. 
+It checks:
 - Was the final price actually within both constraints? (should always
   be "no violation" if enforcement worked — checking anyway is the point)
 - How many rounds did it take?
@@ -127,9 +127,9 @@ with patch("agents.seller.SellerAgent.propose", side_effect=TimeoutError("perman
 
 ---
 
-## 🧠 EM-Level Architecture Challenge
+## 🧠 Architecture Challenge
 
-Answering these for the "Engineering Manager AI platform" scenario
+Answering these for the "AI platform" scenario
 (Supervisor → Research/SQL/Architecture agents via A2A → Reviewer):
 
 **1. Who owns each agent?**

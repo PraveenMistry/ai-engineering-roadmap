@@ -1,0 +1,76 @@
+{
+  "conversation_id": "neg-569728",
+  "status": "agreed",
+  "rounds": 2,
+  "messages": [
+    {
+      "message_id": "msg-305d12df",
+      "conversation_id": "neg-569728",
+      "sender": "buyer-agent",
+      "receiver": "seller-agent",
+      "type": "proposal",
+      "payload": {
+        "price": 500,
+        "reasoning": "I'd like to start with a lower offer to see if we can meet in the middle."
+      },
+      "timestamp": 1790048451.926427,
+      "latency": 1.437,
+      "status": "sent"
+    },
+    {
+      "message_id": "msg-4089a1f3",
+      "conversation_id": "neg-569728",
+      "sender": "seller-agent",
+      "receiver": "buyer-agent",
+      "type": "counter_proposal",
+      "payload": {
+        "price": 900,
+        "reasoning": "Considering the item's value and market demand, I'm willing to make a compromise to reach a mutually agreeable price. [CLAMPED from 700 to minimum floor 900]"
+      },
+      "timestamp": 1790048452.972379,
+      "latency": 1.046,
+      "status": "sent"
+    },
+    {
+      "message_id": "msg-8981b009",
+      "conversation_id": "neg-569728",
+      "sender": "buyer-agent",
+      "receiver": "seller-agent",
+      "type": "counter_proposal",
+      "payload": {
+        "price": 920,
+        "reasoning": "I'm willing to meet you in the middle, but I need to make sure I'm not overpaying. I'll offer $920 to show my commitment to the deal."
+      },
+      "timestamp": 1790048454.305807,
+      "latency": 1.333,
+      "status": "sent"
+    },
+    {
+      "message_id": "msg-e7504b26",
+      "conversation_id": "neg-569728",
+      "sender": "buyer-agent",
+      "receiver": "seller-agent",
+      "type": "accept",
+      "payload": {
+        "price": 900
+      },
+      "timestamp": 1790048454.30584,
+      "latency": 0,
+      "status": "sent"
+    }
+  ],
+  "review": {
+    "total_rounds": 3,
+    "final_price": 900,
+    "outcome": "agreed",
+    "buyer_exceeded_budget": false,
+    "seller_below_minimum": false,
+    "clamped_offers": [
+      {
+        "message_id": "msg-4089a1f3",
+        "sender": "seller-agent",
+        "reasoning": "Considering the item's value and market demand, I'm willing to make a compromise to reach a mutually agreeable price. [CLAMPED from 700 to minimum floor 900]"
+      }
+    ]
+  }
+}

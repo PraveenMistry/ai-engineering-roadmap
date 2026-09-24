@@ -1,0 +1,76 @@
+{
+  "conversation_id": "neg-6d12c5",
+  "status": "agreed",
+  "rounds": 2,
+  "messages": [
+    {
+      "message_id": "msg-e5795ecf",
+      "conversation_id": "neg-6d12c5",
+      "sender": "buyer-agent",
+      "receiver": "seller-agent",
+      "type": "proposal",
+      "payload": {
+        "price": 500,
+        "reasoning": "I'm looking to make a reasonable first offer, taking into account the item's market value and my overall budget."
+      },
+      "timestamp": 1790048455.308658,
+      "latency": 1.001,
+      "status": "sent"
+    },
+    {
+      "message_id": "msg-91635484",
+      "conversation_id": "neg-6d12c5",
+      "sender": "seller-agent",
+      "receiver": "buyer-agent",
+      "type": "counter_proposal",
+      "payload": {
+        "price": 900,
+        "reasoning": "We're willing to meet in the middle of our previous offer, taking into account the item's value and market demand. [CLAMPED from 700 to minimum floor 900]"
+      },
+      "timestamp": 1790048456.2549682,
+      "latency": 0.946,
+      "status": "sent"
+    },
+    {
+      "message_id": "msg-6cdee2f7",
+      "conversation_id": "neg-6d12c5",
+      "sender": "buyer-agent",
+      "receiver": "seller-agent",
+      "type": "counter_proposal",
+      "payload": {
+        "price": 920,
+        "reasoning": "I'm willing to meet you in the middle, but I'd like to add a small discount to sweeten the deal."
+      },
+      "timestamp": 1790048457.306266,
+      "latency": 1.051,
+      "status": "sent"
+    },
+    {
+      "message_id": "msg-07218237",
+      "conversation_id": "neg-6d12c5",
+      "sender": "buyer-agent",
+      "receiver": "seller-agent",
+      "type": "accept",
+      "payload": {
+        "price": 900
+      },
+      "timestamp": 1790048457.306302,
+      "latency": 0,
+      "status": "sent"
+    }
+  ],
+  "review": {
+    "total_rounds": 3,
+    "final_price": 900,
+    "outcome": "agreed",
+    "buyer_exceeded_budget": false,
+    "seller_below_minimum": false,
+    "clamped_offers": [
+      {
+        "message_id": "msg-91635484",
+        "sender": "seller-agent",
+        "reasoning": "We're willing to meet in the middle of our previous offer, taking into account the item's value and market demand. [CLAMPED from 700 to minimum floor 900]"
+      }
+    ]
+  }
+}

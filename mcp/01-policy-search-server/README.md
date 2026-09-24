@@ -59,7 +59,7 @@ this server has a search_policy function" — it asks the server what's
 available, confirms the tool it wants exists, and only then invokes it
 by name.
 
-**Why this matters beyond today's toy example:** in the EM Architecture
+**Why this matters beyond today's toy example:** in the Architecture
 Exercise below, a real company might have five different MCP servers
 (Jira, GitHub, Slack, database, deployment). An agent — or more
 realistically, a *supervisor* choosing which specialist agent handles a
@@ -73,7 +73,7 @@ proposition of the protocol, not just today's demo.
 python agent_via_mcp.py
 ```
 
-Compare this file to Day 10's `research_agent.py` + `policy_agent.py`.
+Compare this file to Day 10's (multi-agent) `research_agent.py` + `policy_agent.py`.
 The interpretation logic (the LLM call) is identical — only retrieval
 changed, from a direct Python function call to a call mediated by the
 MCP client/server round-trip.
@@ -81,7 +81,7 @@ MCP client/server round-trip.
 **The point worth sitting with:** because the agent only knows the
 tool's *name* and its *input/output shape* — not its internals — the
 server's `search_policy` implementation could be swapped from today's
-naive keyword search to Day 10's real embeddings-based search, or moved
+naive keyword search to Day 10's (multi-agent) real embeddings-based search, or moved
 to a completely different machine, and `agent_via_mcp.py` would not
 need a single line changed. That decoupling is the actual reason MCP
 exists — not just "a nicer way to call functions."
